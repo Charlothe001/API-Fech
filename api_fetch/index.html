@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API Fetch</title>
+</head>
+<body>
+    <div class=" d-flex justify-content-center">
+        <marquee>Cadastro de Colaboradores</marquee>
+    </div>
+    <div id="errors"></div>
+    <form>
+        <label>Name: <input name="name"></label>
+        <label>Salary: <input name="salary" type="number"></label>
+        <label>Role: <select name="role_id"></select></label>
+        <div>
+            <button type="button" id="btnDelete">Delete</button>
+            <button type="button" id="btnCancel">Cancel</button>
+            <button type="submit" id="btnSubmit">Update</button>
+        </div>
+    </form>
+    <ul></ul>
+<script src="./backend/http.js"></script>    
+<script src="./backend/crud.js"></script>    
+</body>
+</html>
